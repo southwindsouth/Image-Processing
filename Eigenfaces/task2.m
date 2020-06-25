@@ -1,0 +1,10 @@
+clear;
+load data_for_labC.mat;
+im=imread('find_id.jpg');
+weights_of_face=get_face_weights(im,eignfaces_blk);
+figure;
+plot(weights_of_face);
+title('The weights of the face image');
+ylabel('Weights');
+xlabel('Number');
+grid on;
